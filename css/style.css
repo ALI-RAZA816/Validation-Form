@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    overflow-x: hidden;
+    font-family: sans-serif;
+    background-color: #4141ce;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    background: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    max-width: 450px;
+    position: relative;
+    border-radius: 5px;
+}
+
+
+form {
+    padding:15px 20px;
+    width: 100%;
+}
+
+
+.input{
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    margin-bottom: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.input:first-child label,
+.input:nth-child(2) label{
+    margin-right: 40px;
+}
+
+.input:nth-child(3) label{
+    margin-right: 55px;
+}
+
+.input label{
+    text-wrap: nowrap;
+    font-size: 15px;
+    color: #333;
+    text-align: center;
+    line-height:45px;
+    display: inline-block;
+}
+
+
+.input input{
+    border:none;
+    outline: none;
+    height: 45px;
+    width:100%;
+    border-bottom: 1.5px solid #9c9999;
+    font-size: 13px;
+    color: #333;
+}
+
+.container i{
+    font-size: 40px;
+    color: #4141ce;
+}
+
+
+.input textarea{
+    height: 100px;
+    width:100%;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+    color: #333;
+    font-size: 13px;
+    border-bottom: 1.5px solid #797979;
+}
+
+
+form [type='submit']{
+    height: 40px;
+    border-radius: 5px;
+    width: 120px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #fff;
+    background-color: #4141ce;
+    cursor: pointer;
+}
+
+.input:nth-child(4) label{
+    line-height: 80px;
+    /* border: 1px solid red; */
+    margin-right: 15px;
+}
+
+.container>span{
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    color: #d82121;
+    margin-left: 15px;
+    display: none;
+
+}
+
+.input #name-error,
+.input #email-error,
+.input #message-error,
+.input #phone-error{
+    position: absolute;
+    right: 0;
+    top:15px;
+    font-size: 13px;
+    color: #d82121;
+}
+
+
+.input #name-error i,
+.input #email-error i,
+.input #message-error i,
+.input #phone-error i{
+    font-size: 15px;
+    color: green;
+}
+
+
+.input #message-error{
+    top: 70px;
+}
+
+
+
+
